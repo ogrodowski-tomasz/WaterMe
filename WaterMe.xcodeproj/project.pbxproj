@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E0F58AB292F70D3008B48B2 /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0F58AA292F70D3008B48B2 /* Extension+UIImage.swift */; };
+		1E0F58AF292F8832008B48B2 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0F58AE292F8832008B48B2 /* Extension+View.swift */; };
+		1E0F58B4292F8B74008B48B2 /* AddNewPlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0F58B3292F8B74008B48B2 /* AddNewPlantViewModel.swift */; };
+		1E0F58B6292F92A4008B48B2 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0F58B5292F92A4008B48B2 /* LaunchScreen.swift */; };
+		1EAACB54292E497300827D24 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB53292E497300827D24 /* Extension+Color.swift */; };
+		1EAACB56292E657700827D24 /* EditPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB55292E657700827D24 /* EditPlantView.swift */; };
+		1EAACB58292E85F100827D24 /* EditPlanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB57292E85F100827D24 /* EditPlanViewModel.swift */; };
+		1EAACB5A292E8BDA00827D24 /* UserNotificationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB59292E8BDA00827D24 /* UserNotificationsService.swift */; };
+		1EAACB5C292E965F00827D24 /* PhotoPickerReuseableComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB5B292E965F00827D24 /* PhotoPickerReuseableComponent.swift */; };
+		1EAACB5E292EA51C00827D24 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB5D292EA51C00827D24 /* EmptyView.swift */; };
+		1EAACB61292EAF8300827D24 /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB60292EAF8300827D24 /* Extension+UIApplication.swift */; };
+		1EAACB63292EB8DA00827D24 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB62292EB8DA00827D24 /* ImagePickerController.swift */; };
+		1EAACB65292EBDA300827D24 /* CustomImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB64292EBDA300827D24 /* CustomImagePickerView.swift */; };
+		1EE3F218292CCC3D0017015F /* WaterMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3F217292CCC3D0017015F /* WaterMeApp.swift */; };
+		1EE3F21A292CCC3D0017015F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3F219292CCC3D0017015F /* ContentView.swift */; };
+		1EE3F21C292CCC3E0017015F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EE3F21B292CCC3E0017015F /* Assets.xcassets */; };
+		1EE3F21F292CCC3E0017015F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EE3F21E292CCC3E0017015F /* Preview Assets.xcassets */; };
+		1EE3F22A292CCC700017015F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3F229292CCC700017015F /* Home.swift */; };
+		1EE3F22C292CD2AD0017015F /* AddNewPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3F22B292CD2AD0017015F /* AddNewPlant.swift */; };
+		1EE3F22F292CD57D0017015F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3F22E292CD57D0017015F /* CustomTextField.swift */; };
+		1EE3F231292CD9E50017015F /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3F230292CD9E50017015F /* Plant.swift */; };
+		1EE3F234292CDA390017015F /* PlantModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3F232292CDA390017015F /* PlantModel.xcdatamodeld */; };
+		1EE3F236292CDAD50017015F /* PlantsPersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3F235292CDAD50017015F /* PlantsPersistenceService.swift */; };
+		1EE3F239292CE5D00017015F /* PlantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3F238292CE5D00017015F /* PlantsViewModel.swift */; };
+		1EE3F23B292CF9E70017015F /* PlantRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3F23A292CF9E70017015F /* PlantRowCell.swift */; };
+		1EE3F23D292D13FF0017015F /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3F23C292D13FF0017015F /* CustomTextView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E0F58AA292F70D3008B48B2 /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
+		1E0F58AE292F8832008B48B2 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
+		1E0F58B3292F8B74008B48B2 /* AddNewPlantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlantViewModel.swift; sourceTree = "<group>"; };
+		1E0F58B5292F92A4008B48B2 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		1EAACB53292E497300827D24 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
+		1EAACB55292E657700827D24 /* EditPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlantView.swift; sourceTree = "<group>"; };
+		1EAACB57292E85F100827D24 /* EditPlanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlanViewModel.swift; sourceTree = "<group>"; };
+		1EAACB59292E8BDA00827D24 /* UserNotificationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsService.swift; sourceTree = "<group>"; };
+		1EAACB5B292E965F00827D24 /* PhotoPickerReuseableComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerReuseableComponent.swift; sourceTree = "<group>"; };
+		1EAACB5D292EA51C00827D24 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		1EAACB5F292EAD0800827D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1EAACB60292EAF8300827D24 /* Extension+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
+		1EAACB62292EB8DA00827D24 /* ImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		1EAACB64292EBDA300827D24 /* CustomImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImagePickerView.swift; sourceTree = "<group>"; };
+		1EE3F214292CCC3D0017015F /* WaterMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EE3F217292CCC3D0017015F /* WaterMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMeApp.swift; sourceTree = "<group>"; };
+		1EE3F219292CCC3D0017015F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1EE3F21B292CCC3E0017015F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EE3F21E292CCC3E0017015F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1EE3F229292CCC700017015F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		1EE3F22B292CD2AD0017015F /* AddNewPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlant.swift; sourceTree = "<group>"; };
+		1EE3F22E292CD57D0017015F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		1EE3F230292CD9E50017015F /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		1EE3F233292CDA390017015F /* PlantModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlantModel.xcdatamodel; sourceTree = "<group>"; };
+		1EE3F235292CDAD50017015F /* PlantsPersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsPersistenceService.swift; sourceTree = "<group>"; };
+		1EE3F238292CE5D00017015F /* PlantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewModel.swift; sourceTree = "<group>"; };
+		1EE3F23A292CF9E70017015F /* PlantRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRowCell.swift; sourceTree = "<group>"; };
+		1EE3F23C292D13FF0017015F /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EE3F211292CCC3D0017015F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E0F58B0292F88A6008B48B2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1E0F58B1292F88B4008B48B2 /* Cells */,
+				1EAACB55292E657700827D24 /* EditPlantView.swift */,
+				1EE3F22B292CD2AD0017015F /* AddNewPlant.swift */,
+				1EE3F229292CCC700017015F /* Home.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1E0F58B1292F88B4008B48B2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1EE3F23A292CF9E70017015F /* PlantRowCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1E0F58B2292F88CB008B48B2 /* Side */ = {
+			isa = PBXGroup;
+			children = (
+				1EAACB64292EBDA300827D24 /* CustomImagePickerView.swift */,
+				1EAACB5D292EA51C00827D24 /* EmptyView.swift */,
+				1EAACB5B292E965F00827D24 /* PhotoPickerReuseableComponent.swift */,
+			);
+			path = Side;
+			sourceTree = "<group>";
+		};
+		1EE3F20B292CCC3D0017015F = {
+			isa = PBXGroup;
+			children = (
+				1EE3F216292CCC3D0017015F /* WaterMe */,
+				1EE3F215292CCC3D0017015F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1EE3F215292CCC3D0017015F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EE3F214292CCC3D0017015F /* WaterMe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EE3F216292CCC3D0017015F /* WaterMe */ = {
+			isa = PBXGroup;
+			children = (
+				1EAACB5F292EAD0800827D24 /* Info.plist */,
+				1EE3F228292CCC530017015F /* Utils */,
+				1EE3F227292CCC500017015F /* Extensions */,
+				1EE3F226292CCC4D0017015F /* View */,
+				1EE3F225292CCC4B0017015F /* Model */,
+				1EE3F237292CE5BE0017015F /* ViewModel */,
+				1EE3F217292CCC3D0017015F /* WaterMeApp.swift */,
+				1EE3F219292CCC3D0017015F /* ContentView.swift */,
+				1EE3F21B292CCC3E0017015F /* Assets.xcassets */,
+				1EE3F21D292CCC3E0017015F /* Preview Content */,
+			);
+			path = WaterMe;
+			sourceTree = "<group>";
+		};
+		1EE3F21D292CCC3E0017015F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1EE3F21E292CCC3E0017015F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1EE3F225292CCC4B0017015F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1EE3F230292CD9E50017015F /* Plant.swift */,
+				1EE3F232292CDA390017015F /* PlantModel.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1EE3F226292CCC4D0017015F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E0F58B2292F88CB008B48B2 /* Side */,
+				1E0F58B0292F88A6008B48B2 /* Core */,
+				1EE3F22D292CD5740017015F /* Components */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1EE3F227292CCC500017015F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1EAACB53292E497300827D24 /* Extension+Color.swift */,
+				1EAACB60292EAF8300827D24 /* Extension+UIApplication.swift */,
+				1E0F58AA292F70D3008B48B2 /* Extension+UIImage.swift */,
+				1E0F58AE292F8832008B48B2 /* Extension+View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1EE3F228292CCC530017015F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1EE3F235292CDAD50017015F /* PlantsPersistenceService.swift */,
+				1EAACB59292E8BDA00827D24 /* UserNotificationsService.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1EE3F22D292CD5740017015F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1EE3F22E292CD57D0017015F /* CustomTextField.swift */,
+				1EE3F23C292D13FF0017015F /* CustomTextView.swift */,
+				1EAACB62292EB8DA00827D24 /* ImagePickerController.swift */,
+				1E0F58B5292F92A4008B48B2 /* LaunchScreen.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1EE3F237292CE5BE0017015F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1EE3F238292CE5D00017015F /* PlantsViewModel.swift */,
+				1EAACB57292E85F100827D24 /* EditPlanViewModel.swift */,
+				1E0F58B3292F8B74008B48B2 /* AddNewPlantViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EE3F213292CCC3D0017015F /* WaterMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EE3F222292CCC3E0017015F /* Build configuration list for PBXNativeTarget "WaterMe" */;
+			buildPhases = (
+				1EE3F210292CCC3D0017015F /* Sources */,
+				1EE3F211292CCC3D0017015F /* Frameworks */,
+				1EE3F212292CCC3D0017015F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaterMe;
+			productName = WaterMe;
+			productReference = 1EE3F214292CCC3D0017015F /* WaterMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EE3F20C292CCC3D0017015F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					1EE3F213292CCC3D0017015F = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 1EE3F20F292CCC3D0017015F /* Build configuration list for PBXProject "WaterMe" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EE3F20B292CCC3D0017015F;
+			productRefGroup = 1EE3F215292CCC3D0017015F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EE3F213292CCC3D0017015F /* WaterMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EE3F212292CCC3D0017015F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EE3F21F292CCC3E0017015F /* Preview Assets.xcassets in Resources */,
+				1EE3F21C292CCC3E0017015F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EE3F210292CCC3D0017015F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EE3F23B292CF9E70017015F /* PlantRowCell.swift in Sources */,
+				1E0F58AB292F70D3008B48B2 /* Extension+UIImage.swift in Sources */,
+				1EE3F21A292CCC3D0017015F /* ContentView.swift in Sources */,
+				1EE3F236292CDAD50017015F /* PlantsPersistenceService.swift in Sources */,
+				1E0F58AF292F8832008B48B2 /* Extension+View.swift in Sources */,
+				1EE3F231292CD9E50017015F /* Plant.swift in Sources */,
+				1EAACB65292EBDA300827D24 /* CustomImagePickerView.swift in Sources */,
+				1EE3F22A292CCC700017015F /* Home.swift in Sources */,
+				1E0F58B6292F92A4008B48B2 /* LaunchScreen.swift in Sources */,
+				1EE3F23D292D13FF0017015F /* CustomTextView.swift in Sources */,
+				1EE3F234292CDA390017015F /* PlantModel.xcdatamodeld in Sources */,
+				1EAACB5E292EA51C00827D24 /* EmptyView.swift in Sources */,
+				1EAACB54292E497300827D24 /* Extension+Color.swift in Sources */,
+				1EE3F239292CE5D00017015F /* PlantsViewModel.swift in Sources */,
+				1EAACB63292EB8DA00827D24 /* ImagePickerController.swift in Sources */,
+				1E0F58B4292F8B74008B48B2 /* AddNewPlantViewModel.swift in Sources */,
+				1EAACB5C292E965F00827D24 /* PhotoPickerReuseableComponent.swift in Sources */,
+				1EE3F22C292CD2AD0017015F /* AddNewPlant.swift in Sources */,
+				1EE3F218292CCC3D0017015F /* WaterMeApp.swift in Sources */,
+				1EAACB58292E85F100827D24 /* EditPlanViewModel.swift in Sources */,
+				1EAACB5A292E8BDA00827D24 /* UserNotificationsService.swift in Sources */,
+				1EE3F22F292CD57D0017015F /* CustomTextField.swift in Sources */,
+				1EAACB61292EAF8300827D24 /* Extension+UIApplication.swift in Sources */,
+				1EAACB56292E657700827D24 /* EditPlantView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1EE3F220292CCC3E0017015F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1EE3F221292CCC3E0017015F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EE3F223292CCC3E0017015F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterMe/Preview Content\"";
+				DEVELOPMENT_TEAM = FU45F4SL37;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WaterMe/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"We need access to library in order to pick image for plant!\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogrodowskitomasz.WaterMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1EE3F224292CCC3E0017015F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterMe/Preview Content\"";
+				DEVELOPMENT_TEAM = FU45F4SL37;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WaterMe/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"We need access to library in order to pick image for plant!\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogrodowskitomasz.WaterMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EE3F20F292CCC3D0017015F /* Build configuration list for PBXProject "WaterMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EE3F220292CCC3E0017015F /* Debug */,
+				1EE3F221292CCC3E0017015F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EE3F222292CCC3E0017015F /* Build configuration list for PBXNativeTarget "WaterMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EE3F223292CCC3E0017015F /* Debug */,
+				1EE3F224292CCC3E0017015F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1EE3F232292CDA390017015F /* PlantModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1EE3F233292CDA390017015F /* PlantModel.xcdatamodel */,
+			);
+			currentVersion = 1EE3F233292CDA390017015F /* PlantModel.xcdatamodel */;
+			path = PlantModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1EE3F20C292CCC3D0017015F /* Project object */;
+}
