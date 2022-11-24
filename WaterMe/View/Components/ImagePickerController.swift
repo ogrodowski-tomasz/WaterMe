@@ -15,7 +15,8 @@ struct ImageCameraPickerController: UIViewControllerRepresentable {
  
     var sourceType: UIImagePickerController.SourceType
     
-    @Binding var selectedImage: UIImage?
+    @Binding var selectedUIImage: UIImage?
+
     @Environment(\.dismiss) var dismiss
  
     func makeUIViewController(context: UIViewControllerRepresentableContext<ImageCameraPickerController>) -> UIImagePickerController {
@@ -48,9 +49,8 @@ struct ImageCameraPickerController: UIViewControllerRepresentable {
      
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
      
-            if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-                
-                parent.selectedImage = image.fixedOrientation()
+            if let uiiimage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+                parent.selectedUIImage = uiiimage.fixedOrientation()
             }
      
             parent.dismiss()

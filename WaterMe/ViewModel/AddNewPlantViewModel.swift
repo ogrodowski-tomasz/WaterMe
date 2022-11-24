@@ -5,6 +5,7 @@
 //  Created by Tomasz Ogrodowski on 24/11/2022.
 //
 
+import SwiftUI
 import UIKit
 
 class AddNewPlantViewModel: ObservableObject {
@@ -17,8 +18,9 @@ class AddNewPlantViewModel: ObservableObject {
     
     @Published var newName: String = ""
     @Published var newDesctiption: String = ""
-    @Published var newImageData: Data? = nil
+//    var newImageData: Data? = nil
     @Published var newWateringDate: Date = Date()
+    @Published var image: UIImage? 
     
     var saveButtonDisabled: Bool {
         guard !newName.isEmpty, !newDesctiption.isEmpty else {
@@ -29,7 +31,7 @@ class AddNewPlantViewModel: ObservableObject {
     
     func performSaving() {
         var imageData: Data
-        if let newImageData {
+        if let newImageData = image?.pngData() {
             imageData = newImageData
         } else {
             guard let defaultImageData = UIImage(named: "plant")?.pngData() else { return }

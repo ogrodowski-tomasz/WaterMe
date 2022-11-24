@@ -48,7 +48,9 @@ struct AddNewPlant: View {
             Button {
                 showImageSourceActionSheet.toggle()
             } label: {
-                if let selectedImageData = viewModel.newImageData, let uiimage = UIImage(data: selectedImageData) {
+//                if let selectedImageData = viewModel.newImageData, let uiimage = UIImage(data: selectedImageData)
+                if let uiimage = viewModel.image {
+//                    Image(uiImage: uiimage)
                     Image(uiImage: uiimage)
                         .resizable()
                         .scaledToFill()
@@ -66,13 +68,15 @@ struct AddNewPlant: View {
             }
             .frame(height: 300)
             .sheet(isPresented: $showCamera) {
-                CustomImagePickerView(pickerType: .camera) { data in
-                    viewModel.newImageData = data
+                CustomImagePickerView(pickerType: .camera) { image in
+                    viewModel.image = image
+//                    viewModel.newImageData = data
                 }
             }
             .sheet(isPresented: $showPhotosPicker) {
-                CustomImagePickerView(pickerType: .photoLibrary) { data in
-                    viewModel.newImageData = data
+                CustomImagePickerView(pickerType: .photoLibrary) { image in
+                    viewModel.image = image
+//                    viewModel.newImageData = data
                 }
             }
             CustomTextField(title: "Plant Name", text: $viewModel.newName)

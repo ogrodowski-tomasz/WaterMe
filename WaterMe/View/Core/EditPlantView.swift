@@ -17,8 +17,6 @@ struct EditPlantView: View {
     
     @State private var showDeletingPlantAlert = false
     
-    @State private var selectedImageData: Data? = nil
-
     @State private var showAlert = false
     @State private var showImageSourceActionSheet = false
     @State private var showPhotosPicker = false
@@ -33,14 +31,16 @@ struct EditPlantView: View {
                 Button {
                     showImageSourceActionSheet.toggle()
                 } label: {
-                    if let selectedImageData, let uiimage = UIImage(data: selectedImageData) {
-                        Image(uiImage: uiimage)
+                    if let oldUiImage = viewModel.oldImage  {
+                        // Showing old image at first
+                        Image(uiImage: oldUiImage)
                             .resizable()
                             .scaledToFill()
                             .frame(height: 250)
                             .clipShape(Circle())
-                    } else if let imageData = viewModel.newImageData, let uiimage = UIImage(data: imageData) {
-                        Image(uiImage: uiimage)
+                    } else if let newUiImage = viewModel.updatedUiImage {
+                        // Showing updated image if selected
+                        Image(uiImage: newUiImage)
                             .resizable()
                             .scaledToFill()
                             .frame(height: 250)
@@ -48,13 +48,13 @@ struct EditPlantView: View {
                     }
                 }
                 .sheet(isPresented: $showCamera) {
-                    CustomImagePickerView(pickerType: .camera) { data in
-                        viewModel.newImageData = data
+                    CustomImagePickerView(pickerType: .camera) { uiimage in
+                        viewModel.updatedUiImage = uiimage
                     }
                 }
                 .sheet(isPresented: $showPhotosPicker) {
-                    CustomImagePickerView(pickerType: .photoLibrary) { data in
-                        viewModel.newImageData = data
+                    CustomImagePickerView(pickerType: .photoLibrary) { uiimage in
+                        viewModel.updatedUiImage = uiimage
                     }
                 }
 

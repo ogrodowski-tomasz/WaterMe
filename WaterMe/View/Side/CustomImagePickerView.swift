@@ -9,14 +9,14 @@ import SwiftUI
 
 struct CustomImagePickerView: View {
     let pickerType: UIImagePickerController.SourceType
-    var completion: (Data) -> Void
+    var completion: (UIImage) -> Void
     @State private var selectedImage: UIImage? = nil
-    
+
     var body: some View {
-        ImageCameraPickerController(sourceType: pickerType, selectedImage: $selectedImage)
-            .onChange(of: selectedImage) { image in
-                guard let imageData = image?.pngData() else { return }
-                completion(imageData)
+        ImageCameraPickerController(sourceType: pickerType, selectedUIImage: $selectedImage)
+            .onChange(of: selectedImage) { uiimage in
+                guard let uiimage = selectedImage else { return }
+                completion(uiimage)
             }
     }
 }

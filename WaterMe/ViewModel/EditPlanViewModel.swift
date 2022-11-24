@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class EditPlanViewModel: ObservableObject {
     
@@ -13,7 +14,13 @@ class EditPlanViewModel: ObservableObject {
     
     var newName: String
     var newDesctiption: String
-    var newImageData: Data
+    
+    var updatedUiImage: UIImage? {
+        didSet {
+            oldImage = nil
+        }
+    }
+    var oldImage: UIImage?
     var newWateringDate: Date
     
     var service: PlantsPersistenceServiceable
@@ -24,17 +31,21 @@ class EditPlanViewModel: ObservableObject {
         
         newName = plant.name
         newDesctiption = plant.description
-        newImageData = plant.imageData
         newWateringDate = plant.wateringDate
+        
+        if let uiimageFromOldData = UIImage(data: plant.imageData) {
+            self.oldImage = uiimageFromOldData
+        }
     }
     
     func updatePlant() {
+        guard let uiimage = updatedUiImage, let imageData = uiimage.pngData() else { return }
         let editedPlant = Plant(
             id: plant.id,
             name: newName,
             description: newDesctiption,
             wateringDate: newWateringDate,
-            imageData: newImageData
+            imageData: imageData
         )
         service.update(plant: editedPlant)
 
