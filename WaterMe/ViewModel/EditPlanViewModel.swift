@@ -55,6 +55,7 @@ class EditPlanViewModel: ObservableObject {
     }
     
     func deletePlant() {
+        UserNotificationsService().removeNotification(notificationId: plant.id)
         service.delete(plant: plant)
     }
     

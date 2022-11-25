@@ -27,8 +27,6 @@ class PlantsViewModel: ObservableObject {
                 print("DEBUG: Fetched \(fetchedEntities.count) new Entities")
                 var plants = [Plant]()
                 fetchedEntities.forEach { entity in
-//                    #warning(" handle isWatered here")
-                    // Tutaj powinna się odbyć permutacja wartości isWatered w zależności od tego jaka jest godzina
                     let plant = Plant(id: entity.id ?? "", name: entity.name ?? "", description: entity.plantDescription ?? "", wateringDate: entity.wateringDate ?? Date(), imageData: entity.imageData ?? Data())
                     plants.append(plant)
                 }
@@ -39,10 +37,6 @@ class PlantsViewModel: ObservableObject {
     
     func addPlant(plant: Plant) {
         service.create(plant: plant)
-    }
-    
-    func updatePlant(plant: Plant) {
-        // TODO: Update plant in service
     }
 
     func providePersistenceService() -> PlantsPersistenceServiceable {

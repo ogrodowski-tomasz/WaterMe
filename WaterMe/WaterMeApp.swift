@@ -21,9 +21,7 @@ struct WaterMeApp: App {
             ZStack {
                 ContentView()
                     .preferredColorScheme(.dark)
-                
             }
-            
         }
     }
     
