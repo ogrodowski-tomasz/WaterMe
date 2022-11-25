@@ -11,6 +11,7 @@
 		1E0F58AF292F8832008B48B2 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0F58AE292F8832008B48B2 /* Extension+View.swift */; };
 		1E0F58B4292F8B74008B48B2 /* AddNewPlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0F58B3292F8B74008B48B2 /* AddNewPlantViewModel.swift */; };
 		1E0F58B6292F92A4008B48B2 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0F58B5292F92A4008B48B2 /* LaunchScreen.swift */; };
+		1E4264672930D98A00F085CD /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4264662930D98A00F085CD /* HapticsManager.swift */; };
 		1EAACB54292E497300827D24 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB53292E497300827D24 /* Extension+Color.swift */; };
 		1EAACB56292E657700827D24 /* EditPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB55292E657700827D24 /* EditPlantView.swift */; };
 		1EAACB58292E85F100827D24 /* EditPlanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB57292E85F100827D24 /* EditPlanViewModel.swift */; };
@@ -40,6 +41,7 @@
 		1E0F58AE292F8832008B48B2 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		1E0F58B3292F8B74008B48B2 /* AddNewPlantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlantViewModel.swift; sourceTree = "<group>"; };
 		1E0F58B5292F92A4008B48B2 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		1E4264662930D98A00F085CD /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		1EAACB53292E497300827D24 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		1EAACB55292E657700827D24 /* EditPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlantView.swift; sourceTree = "<group>"; };
 		1EAACB57292E85F100827D24 /* EditPlanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlanViewModel.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			children = (
 				1EE3F235292CDAD50017015F /* PlantsPersistenceService.swift */,
 				1EAACB59292E8BDA00827D24 /* UserNotificationsService.swift */,
+				1E4264662930D98A00F085CD /* HapticsManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				1EE3F23B292CF9E70017015F /* PlantRowCell.swift in Sources */,
 				1E0F58AB292F70D3008B48B2 /* Extension+UIImage.swift in Sources */,
 				1EE3F21A292CCC3D0017015F /* ContentView.swift in Sources */,
+				1E4264672930D98A00F085CD /* HapticsManager.swift in Sources */,
 				1EE3F236292CDAD50017015F /* PlantsPersistenceService.swift in Sources */,
 				1E0F58AF292F8832008B48B2 /* Extension+View.swift in Sources */,
 				1EE3F231292CD9E50017015F /* Plant.swift in Sources */,

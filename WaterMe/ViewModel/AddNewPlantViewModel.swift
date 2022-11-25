@@ -18,7 +18,7 @@ class AddNewPlantViewModel: ObservableObject {
     
     @Published var newName: String = ""
     @Published var newDesctiption: String = ""
-//    var newImageData: Data? = nil
+
     @Published var newWateringDate: Date = Date()
     @Published var image: UIImage? 
     
@@ -43,5 +43,6 @@ class AddNewPlantViewModel: ObservableObject {
         let plant = Plant(id: plantID, name: newName, description: newDesctiption, wateringDate: newWateringDate, imageData: imageData)
         service.create(plant: plant)
         UserNotificationsService().scheduleNotification(withID: plantID, titleName: newName, notificationTriggerDate: newWateringDate)
+        HapticManager.notification(type: .success)
     }
 }

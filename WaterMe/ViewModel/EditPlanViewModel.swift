@@ -39,7 +39,14 @@ class EditPlanViewModel: ObservableObject {
     }
     
     func updatePlant() {
-        guard let uiimage = updatedUiImage, let imageData = uiimage.pngData() else { return }
+        var imageData = Data()
+
+        if let updatedUiImage = updatedUiImage, let updatedImageData = updatedUiImage.pngData() {
+            imageData = updatedImageData
+        } else if let oldUIImage = oldImage, let oldImageData = oldUIImage.pngData() {
+            imageData = oldImageData
+        }
+        
         let editedPlant = Plant(
             id: plant.id,
             name: newName,
@@ -47,16 +54,20 @@ class EditPlanViewModel: ObservableObject {
             wateringDate: newWateringDate,
             imageData: imageData
         )
+        
         service.update(plant: editedPlant)
-
+        HapticManager.notification(type: .success)
+        
         // Rescheduling notification
         UserNotificationsService().removeNotification(notificationId: plant.id)
         UserNotificationsService().scheduleNotification(withID: plant.id, titleName: editedPlant.name, notificationTriggerDate: editedPlant.wateringDate)
+        
     }
     
     func deletePlant() {
         UserNotificationsService().removeNotification(notificationId: plant.id)
         service.delete(plant: plant)
+        HapticManager.notification(type: .success)
     }
     
 }
