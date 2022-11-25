@@ -21,7 +21,7 @@ struct Home: View {
                 Button {
                     presentAddNewPlant.toggle()
                 } label: {
-                    Image(systemName: "plus")
+                    Label("Add New Plant", systemImage: "plus")
                         .font(.title2)
                 }
                 .tint(.custom.light)

@@ -33,12 +33,12 @@ struct AddNewPlant: View {
                 
                 Spacer()
                 
-                Text("Add New Plant")
+                Text(NSLocalizedString("Add New Plant", comment: ""))
                     .fontWeight(.semibold)
                 
                 Spacer()
                 
-                Button("Save") {
+                Button(LocalizedStringKey("Save")) {
                     viewModel.performSaving()
                     dismiss()
                 }

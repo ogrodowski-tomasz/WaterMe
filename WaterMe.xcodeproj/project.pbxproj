@@ -12,6 +12,7 @@
 		1E0F58B4292F8B74008B48B2 /* AddNewPlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0F58B3292F8B74008B48B2 /* AddNewPlantViewModel.swift */; };
 		1E0F58B6292F92A4008B48B2 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0F58B5292F92A4008B48B2 /* LaunchScreen.swift */; };
 		1E4264672930D98A00F085CD /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4264662930D98A00F085CD /* HapticsManager.swift */; };
+		1EA19EF02930EF0F00647343 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1EA19EF22930EF0F00647343 /* Localizable.strings */; };
 		1EAACB54292E497300827D24 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB53292E497300827D24 /* Extension+Color.swift */; };
 		1EAACB56292E657700827D24 /* EditPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB55292E657700827D24 /* EditPlantView.swift */; };
 		1EAACB58292E85F100827D24 /* EditPlanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB57292E85F100827D24 /* EditPlanViewModel.swift */; };
@@ -42,6 +43,8 @@
 		1E0F58B3292F8B74008B48B2 /* AddNewPlantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlantViewModel.swift; sourceTree = "<group>"; };
 		1E0F58B5292F92A4008B48B2 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		1E4264662930D98A00F085CD /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		1EA19EF12930EF0F00647343 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1EA19EF32930EF2400647343 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1EAACB53292E497300827D24 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		1EAACB55292E657700827D24 /* EditPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlantView.swift; sourceTree = "<group>"; };
 		1EAACB57292E85F100827D24 /* EditPlanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlanViewModel.swift; sourceTree = "<group>"; };
@@ -108,6 +111,14 @@
 			path = Side;
 			sourceTree = "<group>";
 		};
+		1EA19EEB2930DFA800647343 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				1EA19EF22930EF0F00647343 /* Localizable.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
 		1EE3F20B292CCC3D0017015F = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +138,7 @@
 		1EE3F216292CCC3D0017015F /* WaterMe */ = {
 			isa = PBXGroup;
 			children = (
+				1EA19EEB2930DFA800647343 /* Localizations */,
 				1EAACB5F292EAD0800827D24 /* Info.plist */,
 				1EE3F228292CCC530017015F /* Utils */,
 				1EE3F227292CCC500017015F /* Extensions */,
@@ -252,6 +264,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
 			mainGroup = 1EE3F20B292CCC3D0017015F;
 			productRefGroup = 1EE3F215292CCC3D0017015F /* Products */;
@@ -269,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EE3F21F292CCC3E0017015F /* Preview Assets.xcassets in Resources */,
+				1EA19EF02930EF0F00647343 /* Localizable.strings in Resources */,
 				1EE3F21C292CCC3E0017015F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +323,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1EA19EF22930EF0F00647343 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EA19EF12930EF0F00647343 /* en */,
+				1EA19EF32930EF2400647343 /* pl */,
+			);
+			name = Localizable.strings;
+			path = WaterMe;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1EE3F220292CCC3E0017015F /* Debug */ = {
