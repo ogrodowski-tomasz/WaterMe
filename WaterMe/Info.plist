@@ -4,7 +4,5 @@
 <dict>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>NSCameraUsageDescription</key>
-	<string>&quot;We need camera access to let You take the best shot of Your flower&quot;</string>
 </dict>
 </plist>
