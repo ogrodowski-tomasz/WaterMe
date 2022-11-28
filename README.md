@@ -18,6 +18,7 @@ App featured in <a href="https://apps.apple.com/pl/app/waterme-keep-plants-water
 - [x] Core Data
 - [x] UserNotifications
 - [x] UIViewRepresentable
+- [x] Localization (App is available in Polish and English languages)
 
 This app is designed with <b>MVVM pattern</b>. 
 
