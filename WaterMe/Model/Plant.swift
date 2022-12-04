@@ -13,5 +13,4 @@ struct Plant: Identifiable {
     var description: String
     var wateringDate: Date
     var imageData: Data
-    
 }

@@ -17,7 +17,6 @@
 		1EAACB56292E657700827D24 /* EditPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB55292E657700827D24 /* EditPlantView.swift */; };
 		1EAACB58292E85F100827D24 /* EditPlanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB57292E85F100827D24 /* EditPlanViewModel.swift */; };
 		1EAACB5A292E8BDA00827D24 /* UserNotificationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB59292E8BDA00827D24 /* UserNotificationsService.swift */; };
-		1EAACB5C292E965F00827D24 /* PhotoPickerReuseableComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB5B292E965F00827D24 /* PhotoPickerReuseableComponent.swift */; };
 		1EAACB5E292EA51C00827D24 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB5D292EA51C00827D24 /* EmptyView.swift */; };
 		1EAACB61292EAF8300827D24 /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB60292EAF8300827D24 /* Extension+UIApplication.swift */; };
 		1EAACB63292EB8DA00827D24 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAACB62292EB8DA00827D24 /* ImagePickerController.swift */; };
@@ -34,7 +33,6 @@
 		1EE3F236292CDAD50017015F /* PlantsPersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3F235292CDAD50017015F /* PlantsPersistenceService.swift */; };
 		1EE3F239292CE5D00017015F /* PlantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3F238292CE5D00017015F /* PlantsViewModel.swift */; };
 		1EE3F23B292CF9E70017015F /* PlantRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3F23A292CF9E70017015F /* PlantRowCell.swift */; };
-		1EE3F23D292D13FF0017015F /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3F23C292D13FF0017015F /* CustomTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +47,6 @@
 		1EAACB55292E657700827D24 /* EditPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlantView.swift; sourceTree = "<group>"; };
 		1EAACB57292E85F100827D24 /* EditPlanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlanViewModel.swift; sourceTree = "<group>"; };
 		1EAACB59292E8BDA00827D24 /* UserNotificationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsService.swift; sourceTree = "<group>"; };
-		1EAACB5B292E965F00827D24 /* PhotoPickerReuseableComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerReuseableComponent.swift; sourceTree = "<group>"; };
 		1EAACB5D292EA51C00827D24 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		1EAACB5F292EAD0800827D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1EAACB60292EAF8300827D24 /* Extension+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
@@ -68,7 +65,6 @@
 		1EE3F235292CDAD50017015F /* PlantsPersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsPersistenceService.swift; sourceTree = "<group>"; };
 		1EE3F238292CE5D00017015F /* PlantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewModel.swift; sourceTree = "<group>"; };
 		1EE3F23A292CF9E70017015F /* PlantRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRowCell.swift; sourceTree = "<group>"; };
-		1EE3F23C292D13FF0017015F /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +102,6 @@
 			children = (
 				1EAACB64292EBDA300827D24 /* CustomImagePickerView.swift */,
 				1EAACB5D292EA51C00827D24 /* EmptyView.swift */,
-				1EAACB5B292E965F00827D24 /* PhotoPickerReuseableComponent.swift */,
 			);
 			path = Side;
 			sourceTree = "<group>";
@@ -205,7 +200,6 @@
 			isa = PBXGroup;
 			children = (
 				1EE3F22E292CD57D0017015F /* CustomTextField.swift */,
-				1EE3F23C292D13FF0017015F /* CustomTextView.swift */,
 				1EAACB62292EB8DA00827D24 /* ImagePickerController.swift */,
 				1E0F58B5292F92A4008B48B2 /* LaunchScreen.swift */,
 			);
@@ -304,14 +298,12 @@
 				1EAACB65292EBDA300827D24 /* CustomImagePickerView.swift in Sources */,
 				1EE3F22A292CCC700017015F /* Home.swift in Sources */,
 				1E0F58B6292F92A4008B48B2 /* LaunchScreen.swift in Sources */,
-				1EE3F23D292D13FF0017015F /* CustomTextView.swift in Sources */,
 				1EE3F234292CDA390017015F /* PlantModel.xcdatamodeld in Sources */,
 				1EAACB5E292EA51C00827D24 /* EmptyView.swift in Sources */,
 				1EAACB54292E497300827D24 /* Extension+Color.swift in Sources */,
 				1EE3F239292CE5D00017015F /* PlantsViewModel.swift in Sources */,
 				1EAACB63292EB8DA00827D24 /* ImagePickerController.swift in Sources */,
 				1E0F58B4292F8B74008B48B2 /* AddNewPlantViewModel.swift in Sources */,
-				1EAACB5C292E965F00827D24 /* PhotoPickerReuseableComponent.swift in Sources */,
 				1EE3F22C292CD2AD0017015F /* AddNewPlant.swift in Sources */,
 				1EE3F218292CCC3D0017015F /* WaterMeApp.swift in Sources */,
 				1EAACB58292E85F100827D24 /* EditPlanViewModel.swift in Sources */,
