@@ -48,41 +48,40 @@ struct AddNewPlant: View {
             Button {
                 showImageSourceActionSheet.toggle()
             } label: {
-//                if let selectedImageData = viewModel.newImageData, let uiimage = UIImage(data: selectedImageData)
                 if let uiimage = viewModel.image {
-//                    Image(uiImage: uiimage)
                     Image(uiImage: uiimage)
                         .resizable()
                         .scaledToFill()
-                        .frame(height: 250)
+                        .frame(width: 200, height: 200)
                         .clipShape(Circle())
+                        
                 } else {
                     Image("plus_photo")
                         .renderingMode(.template)
                         .resizable()
                         .scaledToFit()
                         .foregroundColor(.custom.light)
-                        .frame(height: 250)
-                        
+                        .frame(width: 200, height: 200)
                 }
             }
             .frame(height: 300)
             .sheet(isPresented: $showCamera) {
                 CustomImagePickerView(pickerType: .camera) { image in
                     viewModel.image = image
-//                    viewModel.newImageData = data
                 }
             }
             .sheet(isPresented: $showPhotosPicker) {
                 CustomImagePickerView(pickerType: .photoLibrary) { image in
                     viewModel.image = image
-//                    viewModel.newImageData = data
                 }
             }
             CustomTextField(title: "Plant Name", text: $viewModel.newName)
             CustomTextField(title: "Plant Description", text: $viewModel.newDesctiption)
             
             DatePicker("Watering date reminder", selection: $viewModel.newWateringDate, displayedComponents: .hourAndMinute)
+                .onTapGesture {
+                    hideKeyboard()
+                }
             
         }
         .foregroundColor(.custom.light)
@@ -116,8 +115,6 @@ struct AddNewPlant: View {
         }
         
     }
-    
-    
     
     func requestGalleryAccess() {
         PHPhotoLibrary.requestAuthorization(for: .readWrite) { status in

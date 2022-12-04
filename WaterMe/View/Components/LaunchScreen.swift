@@ -50,39 +50,8 @@ struct LaunchScreen: View {
                 }
             }
             .padding(.horizontal)
-//            .onAppear(perform: animateDots)
         }
     }
-//    private func animateDots() {
-//        for _ in 0..<4 {
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-//                withAnimation(.easeInOut(duration: 0.25)) {
-//                    showFirstDot = true
-//                }
-//            }
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//                withAnimation(.easeInOut(duration: 0.25)) {
-//                    showSecondDot = true
-//                }
-//            }
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-//                withAnimation(.easeInOut(duration: 0.25)) {
-//                    showThirdDot = true
-//                }
-//            }
-//
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-//                withAnimation(.easeInOut(duration: 0.25)) {
-//                    showFirstDot = false
-//                    showSecondDot = false
-//                    showThirdDot = false
-//
-//                }
-//            }
-//
-//
-//        }
-//    }
 }
 
 struct LaunchScreen_Previews: PreviewProvider {

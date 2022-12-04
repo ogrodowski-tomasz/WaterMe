@@ -19,6 +19,10 @@ struct CustomTextField: View {
                     .fill(Color.textFieldGray)
             }
             .foregroundColor(.white)
+            .onSubmit {
+                hideKeyboard()
+            }
+            .allowsHitTesting(true)
     }
 }
 
